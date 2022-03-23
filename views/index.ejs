@@ -13,9 +13,19 @@
     <!-- Header -->
     <%- include('components/Header.ejs')  %>
 
-    <% for(const meep of meeps) { %>
-        <%- include('components/MeepCard.ejs', { meep }) %>
-    <% } %>
+    <main>
+        <div class="meep-creator">
+            <h2>Create new Meep</h2>
+            <p>Share your meep with the world!</p>
+        </div>
+        <div class="meep-view">
+            <h2>Latest Meeps</h2>
+            <% for(const meep of meeps) { %>
+                <%- include('components/MeepCard.ejs', { meep }) %>
+            <% } %>
+        </div>
+    </main>
+
 
     <script src="/storage/scripts/moment.min.js"></script>
     <script src="/storage/scripts/date-updater.js"></script>

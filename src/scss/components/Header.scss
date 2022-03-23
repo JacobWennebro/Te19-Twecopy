@@ -1,27 +1,33 @@
 header {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     height: 4rem;
     background-color: #fff;
 
-    #logo {
+    .header-inner {
+        margin: auto;
         height: 100%;
-    }
+        width: 80%;
 
-    nav {
-        float: right;
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            li {
-                display: inline-block;
-                margin-left: 0.75rem;
-                font-size: 0.85rem;
-                a, a:visited, a:link {
-                    color: var(--main-blue);
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
+        #logo {
+            height: 100%;
+        }
+    
+        nav {
+            float: right;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin-left: 0.75rem;
+                    font-size: 0.85rem;
+                    a, a:visited, a:link {
+                        color: var(--main-blue);
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }

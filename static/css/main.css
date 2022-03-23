@@ -1,30 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
 header {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   height: 4rem;
   background-color: #fff;
 }
-header #logo {
+header .header-inner {
+  margin: auto;
+  height: 100%;
+  width: 80%;
+}
+header .header-inner #logo {
   height: 100%;
 }
-header nav {
+header .header-inner nav {
   float: right;
 }
-header nav ul {
+header .header-inner nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-header nav ul li {
+header .header-inner nav ul li {
   display: inline-block;
   margin-left: 0.75rem;
   font-size: 0.85rem;
 }
-header nav ul li a, header nav ul li a:visited, header nav ul li a:link {
+header .header-inner nav ul li a, header .header-inner nav ul li a:visited, header .header-inner nav ul li a:link {
   color: var(--main-blue);
   text-decoration: none;
 }
-header nav ul li a:hover, header nav ul li a:visited:hover, header nav ul li a:link:hover {
+header .header-inner nav ul li a:hover, header .header-inner nav ul li a:visited:hover, header .header-inner nav ul li a:link:hover {
   text-decoration: underline;
 }
 
@@ -69,6 +74,16 @@ html, body {
   box-sizing: inherit;
   margin: 0;
   background-color: #f7f7f7;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  color: #222;
 }
 
 /*# sourceMappingURL=main.css.map */

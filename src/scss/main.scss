@@ -17,3 +17,14 @@ html,body {
     margin: 0;
     background-color: #f7f7f7;
 }
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% auto;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #222;
+    }
+}
