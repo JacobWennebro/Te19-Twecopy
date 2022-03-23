@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+header {
+  padding: 1rem 2rem;
+  height: 4rem;
+  background-color: #fff;
+}
+header #logo {
+  height: 100%;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 0.75rem;
+  font-size: 0.85rem;
+}
+header nav ul li a, header nav ul li a:visited, header nav ul li a:link {
+  color: var(--main-blue);
+  text-decoration: none;
+}
+header nav ul li a:hover, header nav ul li a:visited:hover, header nav ul li a:link:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+button.btn-main {
+  color: #fff;
+  background-color: var(--main-blue);
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.mcard {
+  border-left: 4px solid var(--mcard-color);
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  font-size: 1.2rem;
+}
+.mcard-footer {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: lightgray;
+  user-select: none;
+}
+
+:root {
+  --main-blue: #1DA1F2;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  box-sizing: inherit;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/storage/css/main.css" type="text/css">
+    <link rel="icon" href="/storage/img/logo-200x200.png" type="image/x-icon">
+    <title>Twecopy &mdash; Meep away!</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <%- include('components/Header.ejs')  %>
+
+    <% for(const meep of meeps) { %>
+        <%- include('components/MeepCard.ejs', { meep }) %>
+    <% } %>
+
+    <script src="/storage/scripts/moment.min.js"></script>
+    <script src="/storage/scripts/date-updater.js"></script>
+</body>
+</html>

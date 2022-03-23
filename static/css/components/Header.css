@@ -1,0 +1,30 @@
+header {
+  padding: 1rem 2rem;
+  height: 4rem;
+  background-color: #fff;
+}
+header #logo {
+  height: 100%;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 0.75rem;
+  font-size: 0.85rem;
+}
+header nav ul li a, header nav ul li a:visited, header nav ul li a:link {
+  color: var(--main-blue);
+  text-decoration: none;
+}
+header nav ul li a:hover, header nav ul li a:visited:hover, header nav ul li a:link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Header.css.map */

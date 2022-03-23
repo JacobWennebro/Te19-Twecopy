@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+@import './components/Header.scss';
+@import './components/Button.scss';
+@import './components/MeepCard.scss';
+
+:root {
+    --main-blue: #1DA1F2;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body {
+    box-sizing: inherit;
+    margin: 0;
+    background-color: #f7f7f7;
+}

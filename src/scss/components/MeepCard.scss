@@ -1,0 +1,16 @@
+.mcard {
+    border-left: 4px solid var(--mcard-color);
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background-color: #fff;
+    font-size: 1.2rem;
+
+    &-footer {
+        margin-top: 0.25rem;
+        font-size: 0.85rem;
+        color: lightgray;
+        user-select: none;
+    }
+
+}

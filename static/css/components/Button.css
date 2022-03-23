@@ -1,0 +1,14 @@
+button {
+  cursor: pointer;
+}
+button.btn-main {
+  color: #fff;
+  background-color: var(--main-blue);
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+/*# sourceMappingURL=Button.css.map */

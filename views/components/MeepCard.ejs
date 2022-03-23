@@ -1,0 +1,10 @@
+<div class="mcard" style="--mcard-color: #<%= meep.color %>">
+    <div class="mcard-body">
+        <span class="mcard-body__content">
+            <%= meep.body %>
+        </span>
+    </div>
+    <div class="mcard-footer">
+        <span class="mcard__date" data-server-date="<%= (new Date(meep.created_at)).getTime() %>"></span>
+    </div>
+</div>
