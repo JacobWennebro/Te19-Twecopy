@@ -33,10 +33,10 @@ header .header-inner nav ul li a:hover, header .header-inner nav ul li a:visited
   text-decoration: underline;
 }
 
-button {
+button, input[type=button], input[type=submit] {
   cursor: pointer;
 }
-button.btn-main {
+button.btn-main, input[type=button].btn-main, input[type=submit].btn-main {
   color: #fff;
   background-color: var(--main-blue);
   padding: 0.5rem 0.75rem;
@@ -82,8 +82,30 @@ main {
   display: grid;
   grid-template-columns: 70% auto;
 }
+main .meep-creator, main .meep-view {
+  height: calc(100vh - 4rem);
+}
+main .meep-view {
+  max-height: 100%;
+  overflow-y: scroll;
+}
 main h1, main h2, main h3, main h4, main h5, main h6 {
   color: #222;
+}
+main #newMeep {
+  width: 90%;
+}
+main #newMeep textarea {
+  width: 100%;
+  min-height: 10rem;
+  resize: none;
+}
+main #newMeep textarea, main #newMeep input:not(#color) {
+  padding: 0.5rem;
+}
+main #newMeep #color {
+  height: 3rem;
+  width: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */

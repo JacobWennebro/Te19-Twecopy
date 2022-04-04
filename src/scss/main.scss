@@ -24,7 +24,32 @@ main {
     display: grid;
     grid-template-columns: 70% auto;
 
+    .meep-creator,.meep-view {
+        height: calc(100vh - 4rem);
+    }
+
+    .meep-view {
+        max-height: 100%;
+        overflow-y:scroll;
+    }
+
     h1,h2,h3,h4,h5,h6 {
         color: #222;
+    }
+
+    #newMeep {
+        width: 90%;
+        textarea {
+            width: 100%;
+            min-height: 10rem;
+            resize: none;
+        }
+        textarea,input:not(#color) {
+            padding: 0.5rem;
+        }
+        #color {
+            height: 3rem;
+            width: 3rem;
+        }
     }
 }

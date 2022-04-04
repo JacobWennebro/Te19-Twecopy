@@ -1,7 +1,7 @@
-button {
+button, input[type=button], input[type=submit] {
   cursor: pointer;
 }
-button.btn-main {
+button.btn-main, input[type=button].btn-main, input[type=submit].btn-main {
   color: #fff;
   background-color: var(--main-blue);
   padding: 0.5rem 0.75rem;

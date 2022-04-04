@@ -17,10 +17,17 @@
         <div class="meep-creator">
             <h2>Create new Meep</h2>
             <p>Share your meep with the world!</p>
+
+            <form id="newMeep" onclick="return false">
+                <textarea name="content" id="content" maxlength="140"></textarea>
+                <input class="btn-main" type="color" name="color" id="color">
+                <input type="submit" class="btn-main" id="postBtn" style="float: right" class="btn-main" value="Post">
+            </form>
+
         </div>
         <div class="meep-view">
             <h2>Latest Meeps</h2>
-            <% for(const meep of meeps) { %>
+            <% for(const meep of meeps.reverse()) { %>
                 <%- include('components/MeepCard.ejs', { meep }) %>
             <% } %>
         </div>
@@ -29,5 +36,6 @@
 
     <script src="/storage/scripts/moment.min.js"></script>
     <script src="/storage/scripts/date-updater.js"></script>
+    <script src="/storage/scripts/upload.js"></script>
 </body>
 </html>
