@@ -20,4 +20,4 @@ app.use('/', GenerateRouter(Router(), 'view'));
 app.use('/api', GenerateRouter(Router(), 'api'));
 
 /* Listen on port */
-app.listen(3000);
+app.listen(process.env.PORT || 3000);

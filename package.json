@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "tsc && node ./dist/main",
     "sass": "sass --watch src/scss:static/css",
     "app": "env-cmd nodemon ./src/main.ts",
     "dev": "concurrently \"npm:sass\" \"npm:app\""
