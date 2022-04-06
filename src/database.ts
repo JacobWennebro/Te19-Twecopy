@@ -11,7 +11,7 @@ const db = mysql.createPool({
 
 export const getMeeps = async () => {
     try {
-        const data = await db.promise().query('SELECT * FROM meeps');
+        const data = await db.promise().query(`SELECT * FROM ${process.env.DATABASE_TABLE}`);
         return {
             error: false,
             data: data[0]

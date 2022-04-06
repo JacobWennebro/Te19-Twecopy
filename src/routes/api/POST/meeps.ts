@@ -18,7 +18,7 @@ export default (router: Router) => {
 
         if(data) {
             await database.promise()
-            .query('INSERT INTO meeps (body, color) VALUES (?,?)', [data.body, data.color])
+            .query(`INSERT INTO ${process.env.DATABASE_TABLE} (body, color) VALUES (?,?)`, [data.body, data.color])
             .then((response) => {
                 res.json({
                     ...data
